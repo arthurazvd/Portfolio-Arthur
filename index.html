@@ -12,7 +12,7 @@
     <header>
         <nav>
             <div class="logo-header">
-                <img id="logo1" src="logo.svg" alt="Logo Arthur Azevedo">
+                <img id="logo1" src="logo.svg" alt="Logo Arthur Azevedo" >
             </div>
             <ul class="nav-list">
                 <li><a href="#portfolio">Portfolio</a></li>
@@ -57,7 +57,7 @@
         <section id="contato">
             <div class="div-3">
                 <h1>Entrar em Contato</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                <p>Preencha o formulario a seguir para fazer sua marca decolar 🚀</p>
                 <div class="redes-sociais-2">
                     <img src="images/instagram.svg" alt="instagram">
                     <img src="images/linkedin.svg" alt="linkedin">
@@ -65,32 +65,38 @@
                 </div>
             </div>
             <div class="div-4">
-                <div id="input">
+                <form id="input" action="https://api.staticforms.xyz/submit" method="post">
                     <label for="name">Nome*</label>
                     <div id="nome">
                         <div class="nomes">
-                            <input type="text">
+                            <input type="text" name="name">
                             <label for="fname">Primeiro nome</label>
                         </div>
                         <div class="nomes">
-                            <input type="text">
+                            <input type="text" name="name">
                             <label for="lname">Último nome</label>
                         </div>
                     </div>
                     <div id="resto">
-                        <label for="email">E-mail*</label>
-                        <input type="email">
-                        <label for="mensagem">Mensagem*</label>
-                        <textarea name="Mensagem" id="" cols="30" rows="10"></textarea>
+                        <label for="email" >E-mail*</label>
+                        <input type="email" name="email">
+                        <label for="email" >Telefone*</label>
+                        <input type="phone" name="phone">
+                        <label for="message">Mensagem*</label>
+                        <textarea name="message" id="" cols="30" rows="10"></textarea>
                     </div>
-                </div>
-                <a href=""><button id="button-1">Enviar Mensagem</button></a>
+                    <a href=""><button type="submit" id="button-1">Enviar Mensagem</button></a>
+
+                    <input type="hidden" name="accessKey" value="4f30dd40-f736-4a29-b4a4-78edf463b756">
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index.html">
+                </form>
+                
             </div>
         </section>
     </main>
     <footer>
-        <img src="logo.svg" alt="logofooter">
-        <h1>Arthur Azevêdo</h1>
+        <div align="center" class="credit"><a href="https://grupo.jm7087.com">
+            Arthur Azevêdo | Designer Gráfico</a> © Copyright <script type="text/javascript">document.write(new Date().getFullYear());</script> . Todos os direitos reservados. Desenvolvido <span style="color:#ff2400;"> Arthur Azevêdo</span><span style="font-size: 100%; text-align: left;">.</span></div>
     </footer>
 </body>
 </html>
