@@ -21,11 +21,59 @@ main{
 }
 
 section{
-    min-height: 90vh;
+    min-height: 77vh;
     color: aliceblue;
     padding-top: 5vh;
     display: flex;
 }
+
+/*LOGIN*/
+
+#login{
+    justify-content: center;
+    align-items: center;
+}
+
+.quadrado{
+    background-image: url(images/background.png);
+    width: 500px;
+    height: 450px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+    box-shadow: 0px 10px 50px rgb(0, 0, 0);
+}
+
+.quadrado input{
+    width: 400px;
+}
+
+.quadrado a button{
+    width: 420px;
+}
+
+.quadrado h1{
+    font-size: 30px;
+}
+
+@media (max-width: 600px){
+    .quadrado{
+        width: 300px;
+        height: 400px;
+    }
+    .quadrado input{
+        width: 200px;
+        font-size: 16PX;
+    }
+    .quadrado a button{
+        width: 220px;
+    }
+}
+/*LOGIN - FIM*/
+
 
 /*NAV BAR*/
 #logo1{
@@ -179,14 +227,21 @@ nav{
 }
 
 #button-1{
-    width: 200px;
-    height: 60px;
+    min-width: 200px;
+    min-height: 60px;
     font-size: 18px;
     background-color: #FF8C00;
     border: none;
     color: white;
     font-weight: bolder;
     cursor: pointer;
+    transition: 1s;
+}
+
+#button-1:hover{
+    background-color: #8f4f00;
+    border-radius: 5px;
+    transition: 1s;
 }
 
 a {
@@ -268,7 +323,7 @@ a {
     row-gap: 10px;
 }
 
-.div-4 input{
+input{
     border: none;
     min-height: 50px;
     background-color: #d9d9d9d9;
@@ -378,18 +433,40 @@ footer{
     box-shadow: 0px 10px 50px rgb(0, 0, 0);
 }
 
-footer img{
-    width: 40px;
-}
-
-footer h1{
-    font-size: 20px;
-}
 
 @media (max-height: 800px){
     footer{
         width: 100%;
         height: 12vh;
     }
+    footer div{
+        width: 100%;
+        height: 12vh;
+        font-size: 10px;
+    }
 }
 /* FIM - FOOTER */
+
+/*SCROLLBAR*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #1a0600;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #FF8C00;
+    transition: 1s;
+
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8f4f00;
+    transition: 1s;
+  }
