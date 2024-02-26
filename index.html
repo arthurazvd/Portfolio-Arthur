@@ -30,7 +30,7 @@
         <section id="portfolio">
             <img id="logo-nome" src="images/nome.png" alt="Arthur Azevêdo">
             <div class="project-area">
-                <div class="project"></div>
+                <a href="https://www.behance.net/gallery/190224097/SOCIAL-MEDIA-BURGUER-HOUSE"><div class="project"> <img class="img-p" src="images/P1.png" alt=""></div></a>
                 <div class="project"></div>
                 <div class="project"></div>
                 <div class="project"></div>
@@ -50,11 +50,22 @@
                 <p>Designer Gráfico</p>
                 <p>Me chamo Arthur, tenho 20 anos, sou Designer Gráfico profissional e atuo a 3 anos como freelancer.</p>
                 <p>Com o começo da pandemia em 2020, tive o contato com essa área maravilhosa que é o design gráfico, pela qual fiquei apaixonado. Desde então busco sempre me profissionalizar para conseguir ser a minha melhor versão.</p>
-                <a href="#contato"><button id="button-1">CONTATE-ME</button></a>
+                <a href="#contato"><button class="button-1">CONTATE-ME</button></a>
             </div>
 
         </section>
+        <dialog>
+            <section id="popup">
+                <div class="popup">
+                    <img src="images/tick.svg" alt="Tick">
+                    <h2>Obrigado!</h2>
+                    <p>Sua mensagem foi enviada com sucesso, em pouco tempo entrarei em contato. Valeu!</p>
+                    <a href=""><button type="submit" id="button-close" class="button-1">OK</button></a>
+                </div>
+            </section>
+        </dialog>
         <section id="contato">
+            
             <div class="div-3">
                 <h1>Entrar em Contato</h1>
                 <p>Preencha o formulario a seguir para fazer sua marca decolar 🚀</p>
@@ -85,7 +96,7 @@
                         <label for="message">Mensagem*</label>
                         <textarea name="message" id="" cols="30" rows="10" autocomplete="off" required></textarea>
                     </div>
-                    <a href=""><button type="submit" id="button-1">Enviar Mensagem</button></a>
+                    <a href=""><button type="submit" id="button-popup" class="button-1">Enviar Mensagem</button></a>
 
                     <input type="hidden" name="accessKey" value="4f30dd40-f736-4a29-b4a4-78edf463b756">
                     <input type="hidden" name="redirectTo" value="https://arthurazvd.github.io/Portfolio-Arthur/">
@@ -98,5 +109,18 @@
         <div align="center" class="credit"><a>Arthur Azevêdo | Designer Gráfico</a> <br> 
             © Copyright <script type="text/javascript">document.write(new Date().getFullYear());</script> . Todos os direitos reservados. Desenvolvido por<span style="color:rgb(255, 115, 0);"> Arthur Azevêdo</span><span style="font-size: 100%; text-align: left;">.</span></div>
     </footer>
+    <script>
+        const button = document.querySelector("#button-popup")
+        const modal = document.querySelector("dialog")
+        const buttonclose = document.querySelector("#button_close")
+
+        button.onclick = function (){
+            modal.showModal()
+        }
+
+        buttonclose.onclick = function (){
+            modal.close()
+        }
+    </script>
 </body>
 </html>
